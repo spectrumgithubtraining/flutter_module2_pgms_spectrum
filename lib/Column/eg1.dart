@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class ColumnSampleOne extends StatelessWidget {
   const ColumnSampleOne({super.key});
   @override
@@ -82,5 +83,6 @@ class ColumnSampleOne extends StatelessWidget {
               )
             ]),
       ),
-    );}
+    );
+  }
 }
