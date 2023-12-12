@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_module2_pgms_spectrum/Button/eg1.dart';
 import 'package:flutter_module2_pgms_spectrum/Container/eg1.dart';
 
 import 'Text/eg1.dart';
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TextSample(),
+      home: ButtonSample(),
     );
   }
 }
