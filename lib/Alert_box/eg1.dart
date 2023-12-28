@@ -17,24 +17,30 @@ class _AlertBoxSampleState extends State<AlertBoxSample> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      return AlertDialog(
-                        title: Text('Alert Dialog Title'),
-                        content: Text('This is the content of the alert dialog.'),
-                        actions: [
-                          TextButton(
-                            onPressed: () {
-                              // Close the alert dialog
-                              Navigator.of(context).pop();
-                            },
-                            child: Text('OK'),
-                          ),
-                        ],
-                      );
-                    },
-                  );
+                  setState(() {
+                    showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+// elevation: 500,
+                          content: const TextField(),
+                          actions: [
+                            TextButton(
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                },
+                                child: const Text("Yes")),
+                            TextButton(
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                },
+                                child: const Text("No"))
+                          ],
+                          title: const Text("do you want to exit from thapp?"),
+                        );
+                      },
+                    );
+                  });
                 },
                 child: const Text("Click"))
           ],
