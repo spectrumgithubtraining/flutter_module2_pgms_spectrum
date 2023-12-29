@@ -4,7 +4,7 @@ class Gridsample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter GridView Example'),
+        title: const Text('Flutter GridView Example'),
       ),
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
