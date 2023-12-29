@@ -3,6 +3,8 @@ import 'package:flutter_module2_pgms_spectrum/state_management/provider/controll
 import 'package:flutter_module2_pgms_spectrum/state_management/provider/view/countpage.dart';
 import 'package:provider/provider.dart';
 
+import 'Flash_lightapp/eg1.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -20,7 +22,7 @@ class _MyAppState extends State<MyApp> {
     return ChangeNotifierProvider(
       create: (context) => CounterNotifier(),
       child: const MaterialApp(
-        home: CounterPage(),
+        home: FlashLightSample(),
       ),
     );
   }
