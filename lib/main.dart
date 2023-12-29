@@ -4,6 +4,8 @@ import 'package:flutter_module2_pgms_spectrum/state_management/provider/view/cou
 import 'package:provider/provider.dart';
 
 import 'Flash_lightapp/eg1.dart';
+import 'Grid-view/eg1.dart';
+import 'ToastNotification/eg1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,8 +23,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => CounterNotifier(),
-      child: const MaterialApp(
-        home: FlashLightSample(),
+      child: MaterialApp(
+        home: Gridsample(),
       ),
     );
   }
